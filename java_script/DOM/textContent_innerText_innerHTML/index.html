@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS -->
+        <style>
+            b {
+                display: none;
+            }
+        </style>
+        <title>DOM JS - textContent & innerText & innerHTML</title>
+    </head>
+    <body>
+        <!--  
+            1. So sánh:
+
+                *) Thuộc tính textContent, innerHTML, innerText
+
+                    - Điểm chung: Cả ba đều sử dụng để get hoặc set với phần tử HTML chứa nội dung văn bản, như các phần tử <p>, <span>, <div>,....
+
+                    - Điểm khác cơ bản:
+
+                        a. textContent: Trả về nội dung nằm bên trong phần tử, bao gồm cả khoảng trắng, tab xuống dòng....
+
+                        b. innerText: Trả về văn bản mà người dùng có thể nhìn thấy trên trình duyệt, loại bỏ các phần tử được ẩn bằng CSS.
+
+                        c. innerHTML: Trả về toàn bộ nội dung HTML của phần tử, bao gồm cả các thẻ HTML và cấu trúc của chúng.
+        -->
+        <div id="demo">
+            <p>
+                Toi hoc
+                <b>JavaScript</b>
+                tai Tuhoc.cc
+            </p>
+        </div>
+
+        <div class="demo2"></div>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

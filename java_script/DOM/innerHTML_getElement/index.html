@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM JS - innerHTML & getElement()</title>
+    </head>
+    <body>
+        <!--  
+            4. DOM API
+
+                - innerHTML: là thuộc tính của các phần tử HTML mà cho phép xem, hoặc sửa nội dung HTML bên trong phần tử.
+
+                - Các phương thức getElement():
+
+                    a. getElementsByTagName()
+
+                        +) Chọn trả về phần tử trên trang web dựa trên thẻ HTML: li, ul, <div>, <p>, ...
+
+                        +) Trả về 1 mảng chứa các phần tử có tagName được chỉ định.
+
+                    b. getElementsByClassName()
+
+                        +) Chọn các phần tử trên trang web dựa trên class name.
+
+                        +) Trả về 1 mảng chứa các phần tử có className được chỉ định.
+
+                    c. getElementById()
+
+                        +) Cho phép bạn truy cập và thao tác với phân ftuwr HTML cụ thể trong trang web bằng cách sử dụng ID của phần tử.
+
+                        +) Trả về 1 phần tử duy nhất có id trùng lặp, nếu có nhiều id trùng chỉ trả về id đầu tiên (Tuy nhiên theo quy tắc bạn không được đặt 2 id trùng nhau trên cùng 1 trang).
+
+                        +) Nếu ko tìm thấy trả về null.
+        -->
+        <h1>Chuoi bai hoc ve DOM</h1>
+
+        <!-- menu list -->
+        <ul>
+            <li class="list">
+                <a href="https:/tuhoc.cc">Home Page</a>
+            </li>
+            <li class="list" id="list_about">About me</li>
+            <li class="list">Contact me</li>
+        </ul>
+
+        <form action="agree"><input type="checkbox" name="agree" id="agree" />Dong y thoa than bao mat?</form>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

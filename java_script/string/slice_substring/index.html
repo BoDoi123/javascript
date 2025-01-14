@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>String JS - Slice & Substring</title>
+    </head>
+    <body>
+        <!--  
+            2. Các phương thức cắt chuỗi - String JS
+
+                *) slice & substring - Cắt chuỗi con
+
+                    - name.slice(beginIndex, endIndex);
+
+                    - name.substring(beginIndex, endIndex);
+
+                    => Trích lọc chuỗi con từ chuỗi ban đầu. Cắt từ beginIndex -> endIndex.
+
+                    - Nếu không nhập endIndex => chạy từ beginIndex -> cuỗi chuỗi.
+
+                *) So sánh substring() & slice()
+
+                    a) Đối số truyền vào:
+
+                        - substring(start, end): Nhận vào 2 tham số là vị trí bắt đầu và kết thúc trích xuất.
+
+                            => Nếu end < start, chúng sẽ được đảo ngược - Tự động hiểu số nhỏ hơn là vị trí start.
+
+                        - slice(start, end): Cũng nhận 2 tham số là vị trí bắt đầu và kết thúc trích xuất.
+
+                            => Nếu end < start, chuỗi sẽ được xem như rỗng.
+                        
+                    b) Xử lý với số âm:
+
+                        - substring(start, end): substring sẽ chuyển số âm thành 0.
+
+                            => Nếu end < start sau khi chuyển đổi số âm thành dương thì sẽ đảo ngược chúng.
+
+                        - slice(start, end): cho phép sử dụng số âm để đếm từ cuỗi chuỗi.
+
+                            => Số âm sẽ được hiểu là đếm từ cuối chuỗi về phía trước.
+        -->
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

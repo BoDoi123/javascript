@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM JS - querySelector() & querySelectorAll()</title>
+    </head>
+    <body>
+        <!--  
+            4.6 querySelector()
+
+                - querySelector có thể chấp nhận bất kỳ bộ chọn CSS nào như id, class, tagName, hoặc thậm chí là bộ chọn CSS kết hợp (CSS Combinator) để chọn phần tử trên trang web.
+
+                - Phương thức này trả về phần tử đầu tiên trong document phù hợp với selector được chỉ định.
+
+            4.7 querySelectorAll()
+
+                - querySelectorAll có thể chấp nhận bất kỳ bộ chọn CSS nào như id, class, tagName hoặc thậm chí là bộ chọn CSS kết hợp (CSS Combinators) để chọn phần tử trên trang web.
+
+                - Phương thức này trả về phần tử danh sách các phần tử trong document phù hợp với selector được chỉ định.
+        -->
+
+        <h1 id="heading_title">Chuoi bai hoc ve DOM</h1>
+
+        <!-- menu list -->
+        <ul>
+            <li class="list">
+                <a href="https:/tuhoc.cc">Home Page</a>
+            </li>
+            <li class="list" id="list_about">About me</li>
+            <li class="list">Contact me</li>
+        </ul>
+
+        <form action="agree"><input type="checkbox" name="agree" id="agree" />Dong y thoa than bao mat?</form>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

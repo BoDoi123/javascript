@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>DOM JS - appendChild and append</title>
+    </head>
+    <body>
+        <!--  
+            1. appendChild()
+
+                *) Gần giống với append, thêm 1 node con vào trong 1 phần tử cha trong DOM, tuy nhiên có 1 số điểm khác biệt:
+
+                    a. Đối tượng có thể thêm:
+
+                        - appendChild: chỉ thêm được đối tượng 'Node'.
+
+                        - append: thêm được cả 'Node' và chuỗi văn bản.
+
+                    b. Trả về giá trị
+
+                        - appendChild: trả về phần tử vừa được thêm.
+
+                        - append: không trả về giá trị (undefined).
+
+                    c. Thêm nhiều phần tử:
+
+                        - appendChild: chỉ thêm được 1 phần tử mỗi lần gọi.
+
+                        - append: có thể thêm nhiều phần tử hoặc chuỗi văn bản trong 1 lần gọi.
+
+                2. Tình huống sử dụng appendChild()
+
+                    - Do appendChild có giá trị trả về nên:
+
+                        => Ta có thể Thêm và ngay lập tức thao tác với phần tử.
+        -->
+        <div id="header">
+            <h1>Chào mừng đến với khóa học JS tại tuhoc.cc</h1>
+            <p id="desc">Khóa học cơ bản cho người mới</p>
+        </div>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

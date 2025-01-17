@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM Event - addEventListener</title>
+    </head>
+    <body>
+        <!--  
+            4. addEventListener
+
+                *) Sử dụng để gọi Function (hàm) khi mà sự kiện được chỉ định xảy ra.
+
+                *) Cú pháp addEventListener:
+
+                    - element.addEventListener(event, function, options)
+
+                        a. element: Phần tử muốn thêm sự kiện
+
+                        b. event: tên sự kiện
+
+                        c. function: hàm xử lý sự kiện
+
+                        d. options: tùy chọn
+                *) Lợi ích của addEventListener
+
+                    a. addEventListener: Có thể thêm cùng 1 sự kiện nhiều lần trên 1 phần tử
+
+                        - Khác với DOM Level 0: chỉ thêm được 1 sự kiện cho 1 phần tử, khi thêm sự kiện mới thì sự kiện cũ sẽ bị ghi đè.
+
+                    b. Có thể xóa sự kiện
+
+                        - Sử dụng removeEventListener(event, function, option);
+        -->
+        <h2>3. addEventListener</h2>
+        <button id="btn3">Button 3</button>
+        <button id="btn4">Button 4</button>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM EVENT - DOM Level 0 Event Handling</title>
+    </head>
+    <body>
+        <!--  
+            3. DOM Level 0 Event Handling
+
+                *) Thuật ngữ này được sử dụng để chỉ các phương pháp xử lý sự kiện từ thời kỳ đầu của DOM API, trước khi các tiêu chuẩn DOM Level 2 được giới thiệu.
+
+                *) DOM Level 2 giới thiệu phương thức addEventListener().
+
+                *) DOM Level 0 Event Handling: Là phương pháp bắt sự kiện bằng cách gán trực tiếp 1 hàm JS cho thuộc tính sự kiện của phần tử HTML.
+        -->
+        <h2>1. Inline envent</h2>
+        <button onclick="alert('Bạn đã nhấp vào nút')">Click me</button>
+
+        <h2>2. DOM Level 0 Event Handling</h2>
+
+        <button id="btn">Button 1</button>
+
+        <!-- Ví dụ 2: -->
+        <button id="btn2">Hover me</button>
+
+        <p id="message"></p>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

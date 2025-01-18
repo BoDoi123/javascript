@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM EVENT - Event Object & keyboard events</title>
+    </head>
+    <body>
+        <!--  
+            7. Event Object
+
+                *) Event Object: Là 1 đối tượng chứa thông tin về 1 sự kiện cụ thể khi xảy ra. Sự kiện này có thể là 1 click chuột, nhấn phím, di chuyển chuột, tải trang, ...
+
+                *) Thông tin:
+
+                    - Trong ví dụ này, chúng ta sử dụng addEventListener() để lắng nghe sự kiện keydown trên phần tử inp. Khi sự kiện keydown xảy ra, hàm callback sẽ được gọi và event sẽ chứa tất cả thông tin về sự kiện đó.
+
+                    - Tham số của hàm callback function có thể đặt tên bất kỳ, nhưng thường đặt là event hoặc e.
+
+                    - Callback function là 1 hàm được truyền vào 1 hàm khác dưới dạng tham số. Khi 1 sự kiện nào đó xảy ra, hàm chính sẽ gọi đến hàm callback function đó.
+
+                *) Property của Event Object:
+
+                    a. type: Kiểu sự kiện (ví dụ: click, keydown, keyup, ...).
+
+                    b. target: Phần tử mà sự kiện đã xảy ra.
+
+                    c. clientX, clientY: Tọa độ của con trỏ chuột tại thời điểm sự kiện xảy ra so với góc trên bên trái cảu viewport.
+
+                    d. key: Phím mà bạn đã nhấn (ký tự được tạo ra).
+
+                    e. Code: Đại diện cho 1 phím vật lý trên bàn phím (mã không đổi với mọi bàn phím và ngôn ngữ).
+
+                *) Method của Event Object:
+
+                    a. preventDefault(): Hàm để ngăn chặn hành vi mặc định của sự kiện.
+
+                    b. stopPropagation(): Hàm để ngăn chặn sự kiện lan truyền.
+        -->
+
+        <input type="text" id="inp" />
+        <button id="btn">Click me</button>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

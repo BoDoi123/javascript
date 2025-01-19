@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>DOM EVENT - Event JS - Event Bubbling & stopPropagation()</title>
+    </head>
+    <body>
+        <!-- 
+            11. Event Bubbling 
+
+                *) Tuy chúng ta chỉ click vào thẻ Child, nhưng do các thẻ cha của nó cũng có sự kiện click nên khi click vào thẻ con thì sẽ lan ra các thẻ cha của nó.
+
+                    => Đây được gọi là Event Bubbling
+
+                *) Để ngăn chặn event bubbling, chúng ta sử dụng phương thức stopPropagation().
+        
+        -->
+
+        <!-- 11. Ví dụ về Event Bubbling -->
+        <div id="grandparent">
+            <p>Grand parent</p>
+            <div id="parent">
+                <p>Parent</p>
+                <div id="child">
+                    <p>Child</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

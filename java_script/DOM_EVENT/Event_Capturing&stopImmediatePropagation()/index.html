@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>
+            DOM EVENT - Event JS - Event Capturing & stopImmediatePropagation()
+        </title>
+    </head>
+    <body>
+        <!--  
+            12. Bubbling and Capturing
+
+                *) Bubbling and Capturing
+
+                    a. Bubbling: Sự kiện được phát đi từ phần tử đích lên cay DOM đến gốc (từ trong ra ngoài). Mặc định {capture: false}
+
+                    b. Capturing: Sự kiện được phát đi từ gốc của cây DOM đến phần tử đích (từ ngoài vào trong). Nếu {capture: true}
+
+                *) stopPropagation and stopImmediatePropagation
+
+                    a. Dùng stopPropagation(): chỉ ngăn chặn sự kiện lan truyền từ con lên cha, không ngăn chặn sự kiện của cùng 1 element.
+
+                    b. Dùng stopImmediatePropagation(): ngăn chặn sự kiện của cùng 1 element.
+        -->
+        <div id="grandparent">
+            <p>Grand parent</p>
+            <div id="parent">
+                <p>Parent</p>
+                <div id="child">
+                    <p>Child</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

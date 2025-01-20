@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM EVENT - Event JS - Event Delegation</title>
+    </head>
+    <body>
+        <!--  
+            13. Event Delegation
+
+                *) Cách thực hiện Event Delegation:
+
+                    a. Thêm sự kiện vào phần tử cha (trong ví dụ là sự kiện click vào ul).
+
+                    b. Kiểm tra xem phần tử nào xảy ra sự kiện (event.target).
+
+                    c. Thực hiện công việc cần thiết.
+
+                *) Trong đoạn code main.js: Chúng ta click vào phần tử con li thì nó sẽ xóa phần tử đó đi mặc dù chúng ta lắng nghe sự kiện click trên phần tử cha ul
+
+                    => Điều này gọi là Event Delegation: Sự kiện được giao phó từ phần tử cha xuồng.
+        -->
+        <h1>Bài học Event Delegation</h1>
+
+        <form action="./send.php" id="form">
+            <input type="text" name="" id="username" placeholder="username" />
+            <input type="text" name="" id="message" placeholder="message" />
+            <input type="submit" value="Send" />
+        </form>
+
+        <ul id="list_item">
+            <li>Tin nhắn 1</li>
+            <li>Tin nhắn 2</li>
+            <p>Đoạn văn bản</p>
+        </ul>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

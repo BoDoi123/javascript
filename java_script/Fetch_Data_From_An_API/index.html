@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - Fetch Data From An API</title>
+    </head>
+    <body>
+        <!--  
+            1. fetch():
+
+                - Là 1 API dùng để lấy dữ liệu từ 1 URL (thường là từ server hoặc API). 
+
+                - Hoạt động dựa trên Promises, giúp xử lý các yêu cầu HTTP một cách dễ dàng.
+
+                *) Cú pháp:
+
+                    - fetch(url, {option}) (DEFAULT method: "GET")
+
+                        VD: fetch(url, {method: "POST"}) 
+        -->
+        <input
+            type="text"
+            name=""
+            id="pokemon_name"
+            placeholder="Enter Pokemon name"
+        />
+        <button onclick="fetchDate()">Fetch Pokemon</button><br />
+
+        <img
+            src=""
+            alt="Pokemon Sprite"
+            id="pokemon_sprite"
+            style="display: none"
+        />
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
